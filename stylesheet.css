@@ -1,0 +1,70 @@
+body { 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size:20px;
+	margin: 20px;
+	width: 99%;
+	height: 99%;
+	background-color: #fcf4f1; }
+
+li { display: none; }
+h1 {
+	text-align: center;
+	color: gray;
+	font-family: courier, serif;
+	font-size: 50px;
+	margin-top: 190px;
+	margin-bottom: 60px;
+}
+
+li {
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 35px;
+	text-align: center;
+	font-family: courier, serif;
+	font-size: 30px;
+}
+
+a {
+	text-align: center;
+	font-family: courier, serif;
+	font-size: 18px;
+	text-decoration: underline;
+	color: gray;
+}
+
+span {
+	font-style: italic;
+	color: #E99678;
+}
+
+div {
+	margin: 0 auto;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	font-size: 12px;
+	font-family: courier, serif;
+
+}
+
+#fuzz{ 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    z-index:100; 
+    background: url('http://buildinternet.com/live/lightsout/fuzz.gif');         
+    display:none; 
+    text-align: center;
+    color: white;
+}
+
+
+#content {
+	text-align: center;
+	margin: 0 auto;
+}

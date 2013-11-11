@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<title>The Positivity Pot</title>
+
+<body>
+
+	<div id="fuzz"><p>
+	<h1>Fade In + Gif Background</h1>
+	$(".alert_1").click(function() { <br>
+      $("#fuzz").fadeIn();
+      $("#alert1_howitworks").fadeIn();
+   });</p>
+   </div>
+	
+	<div>
+		
+		<h1> Learn about JQuery </h1>
+			<div id="content">
+    			<button class="alert_1" href="#">Choice 1</button>
+    			<button class="alert" href="#">Choice 2</button>
+    			<button class="alert" href="#">Choice 3</button>
+    			<button class="alert" href="#">Choice 4</button>
+    		</div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+ $(document).ready(function() {
+   
+   //Adjust height of overlay to fill screen when page loads
+   $("#fuzz").css("height", $(document).height());
+ 
+   //When the link that triggers the message is clicked fade in overlay/msgbox
+   $(".alert_1").click(function(){
+      $("#fuzz").fadeIn();
+      $("#alert1_howitworks").fadeIn();
+   });
+ 
+   //Adjust height of overlay to fill screen when browser gets resized
+   $(window).bind("resize", function(){
+      $("#fuzz").css("height", $(window).height());
+   });
+     
+ });
+
+</script>
