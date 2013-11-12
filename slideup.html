@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<title>The Positivity Pot</title>
+<body>
+<div>
+	<h1> Learn about JQuery </h1>
+		<div class = "slidediv">
+			<p class = "slide" >Click me to dissapear!</p>
+			<p class = "slide" >Me Two!!</p>
+			<p class = "slide" >Me Three</p>
+		</div>
+</div>
+</body>
+<footer>Brought to you by <strong>Team Work in Progress</strong>
+</footer>
+</html>
+
+<script>
+$(".slide").click(function() {
+    $(this).slideUp();
+});
+
+</script>
