@@ -69,16 +69,11 @@ footer {
 	margin: 0 auto;
 }
 
-.slide {
-	color: red;
+.alert_4 {
 	margin: 5px;
 	cursor: pointer;
 }
 
-.slide:hover {
-	 background: gray;
-	 color: white;
-}
 
 .slidediv {
 	text-align: center;

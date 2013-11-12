@@ -15,15 +15,13 @@
       $("#alert1_howitworks").fadeIn();
    });</p>
    </div>
-	
 	<div>
-		
 		<h1> Learn about JQuery </h1>
 			<div id="content">
-    			<button class="alert_1" href="#">Choice 1</button>
-    			<button class="alert_2" href="#">Choice 2</button>
-    			<button class="alert_3" href="#">Choice 3</button>
-    			<button class="alert_4" onclick="location.href='slideup.html'">Choice 4</button>
+    			<button class="alert_1">Choice 1</button>
+    			<button class="alert_2">Choice 2</button>
+    			<button class="alert_3">Choice 3</button>
+    			<button class="alert_4">Choice 4</button>
     		</div>
     </div>
 
@@ -31,7 +29,6 @@
 <footer>Brought to you by <strong>Team Work in Progress</strong>
 </footer>
 </html>
-
 <script>
 
  $(document).ready(function() {
@@ -44,12 +41,48 @@
       $("#fuzz").fadeIn();
       $("#alert1_howitworks").fadeIn();
    });
- 
-   //Adjust height of overlay to fill screen when browser gets resized
+
+     //Adjust height of overlay to fill screen when browser gets resized
    $(window).bind("resize", function(){
       $("#fuzz").css("height", $(window).height());
    });
-     
+
+   $(".alert_2").click(function(){
+      window.setTimeout( "setbackground()", 2000); // 5000 milliseconds delay
+
+      var index = Math.round(Math.random() * 9);
+
+      var ColorValue = "FFFFFF"; // default color - white (index = 0)
+
+      if(index == 1)
+      ColorValue = "FFCCCC"; //peach
+      if(index == 2)
+      ColorValue = "CCAFFF"; //violet
+      if(index == 3)
+      ColorValue = "A6BEFF"; //lt blue
+      if(index == 4)
+      ColorValue = "99FFFF"; //cyan
+      if(index == 5)
+      ColorValue = "D5CCBB"; //tan
+      if(index == 6)
+      ColorValue = "99FF99"; //lt green
+      if(index == 7)
+      ColorValue = "FFFF99"; //lt yellow
+      if(index == 8)
+      ColorValue = "FFCC99"; //lt orange
+      if(index == 9)
+      ColorValue = "CCCCCC"; //lt grey
+
+      document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+   });
+
+   $(".alert_3").click(function() {
+    $(this).slideUp();
+    });
+
+   $(".alert_4").click(function() {
+    alert( 'This is an alert! You can write it directly into your HTML code :)' )
+    });     
  });
 
 </script>
